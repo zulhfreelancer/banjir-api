@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paras_air: 9.99
+  jenis_jalan: MyString
+  section: MyString
+  no_laluan: MyString
+  nama_laluan: MyString
+  nama_jalan: MyString
+  daerah: MyString
+  negeri: MyString
+  dikemaskini: 2016-12-31 16:25:57
+
+two:
+  paras_air: 9.99
+  jenis_jalan: MyString
+  section: MyString
+  no_laluan: MyString
+  nama_laluan: MyString
+  nama_jalan: MyString
+  daerah: MyString
+  negeri: MyString
+  dikemaskini: 2016-12-31 16:25:57
