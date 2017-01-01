@@ -5,6 +5,7 @@ task :scrape_jkr => :environment do
     require 'nokogiri'
     require 'open-uri'
     require 'sanitize'
+    require 'uri'
 
     warning = "Penduduk di kawasan yang terlibat dan di kawasan sekitar diminta berjaga-jaga dan mengutamakan keselamatan."
     url     = "http://bencanaalam.jkr.gov.my/v2/index.php?page=map&code=99&types=banjir&tahun="
@@ -19,6 +20,10 @@ task :scrape_jkr => :environment do
         negeri       = ""
         dikemaskini  = Sanitize.fragment(row.css('td')[3]).squish
         raw_data     = row.css('td')[1]
+
+        # get URL in 'onclick' element of '[Peta lokasi]'
+        status_page = raw_data.to_s.match(/'([^']+)/).to_s.delete("'")
+        status      = RoadStatus.get(status_page)
 
         # return Array
         cleaned_data = Sanitize.fragment(raw_data, elements: ["br"])\
@@ -43,7 +48,11 @@ task :scrape_jkr => :environment do
             hash.merge!({data[0] => data[1]})
         end
 
-        hash.merge!({"Negeri" => negeri, "Dikemaskini" => dikemaskini})
+        hash.merge!({
+                        "Negeri"      => negeri,
+                        "Dikemaskini" => dikemaskini,
+                        "Status"      => status
+                    })
         snakecased = hash.transform_keys{|key| key.parameterize.underscore}
         array << snakecased
     end
