@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
     end
 
     def render_no_result
-        render :json => {data: []}
+        render :json => {data: [], message: "No results found", about: about}
     end
 
     def downcase_params
