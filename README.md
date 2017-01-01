@@ -24,6 +24,6 @@ Malaysia flood JSON API. Data from [JKR Malaysia](http://bencanaalam.jkr.gov.my/
 
 ### Contribute
 
-Feel free to fork this project and improve it. Submit your Pull Request for merge review. :muscle:
+Feel free to fork this project and improve it. Submit your Pull Request for merge review.
 
 
