@@ -1,5 +1,5 @@
 task :scrape_jkr => :environment do
-    puts "********** START SCRAPING **********"
+    puts "****************** START SCRAPING *******************"
 
     require 'rubygems'
     require 'nokogiri'
@@ -59,5 +59,5 @@ task :scrape_jkr => :environment do
     ReportHelper.add_record(array)
     # ap array
     # puts "\n-----------------------------\n"
-    puts "********** FINISH SCRAPING **********"
+    puts "****************** FINISH SCRAPING *******************"
 end

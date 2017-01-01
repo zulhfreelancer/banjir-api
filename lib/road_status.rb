@@ -3,7 +3,7 @@ class RoadStatus
     # get middle cell under 'Status Jalan'
     # THE MOST BOTTOM IS THE LATEST RESULT
     def self.get(url_path)
-        puts "**** start scraping #{url_path} ****"
+        puts "---- start scraping #{url_path} ----"
         url  = "http://bencanaalam.jkr.gov.my/v2/" + url_path
         page = Nokogiri::HTML(open(url))
         get_status(page)

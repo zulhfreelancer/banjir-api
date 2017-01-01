@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170101071316) do
+ActiveRecord::Schema.define(version: 20170101171102) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,10 +25,13 @@ ActiveRecord::Schema.define(version: 20170101071316) do
     t.string   "daerah"
     t.string   "negeri"
     t.datetime "dikemaskini"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-    t.integer  "batch_id",    default: 0
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "batch_id",        default: 0
     t.string   "status"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.string   "google_maps_url"
   end
 
 end

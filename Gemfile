@@ -13,6 +13,7 @@ gem 'uglifier',  '>= 1.3.0'
 gem 'nokogiri',  '~> 1.7'
 gem 'sanitize',  '~> 4.4'
 gem 'rack-cors', '~> 0.4.0'
+gem 'geocoder',  '~> 1.4', '>= 1.4.1'
 
 group :development do
   gem 'byebug',                '~> 9.0', '>= 9.0.6', platform: :mri

@@ -47,6 +47,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
+    geocoder (1.4.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -138,6 +139,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print (~> 1.7)
   byebug (~> 9.0, >= 9.0.6)
+  geocoder (~> 1.4, >= 1.4.1)
   listen (~> 3.0.5)
   nokogiri (~> 1.7)
   pg (~> 0.19.0)
