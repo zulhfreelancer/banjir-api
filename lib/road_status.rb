@@ -19,9 +19,13 @@ class RoadStatus
 
     # previous record / not most recent / top in table UI
     def self.get_history(page)
-        row    = page.css('.print table table tr:nth-child(2) td:nth-child(2)')
-        # remove leading and ending empty spaces from it
-        Sanitize.fragment(row).squish.split("-")[1].squish
+        begin
+            row    = page.css('.print table table tr:nth-child(2) td:nth-child(2)')
+            # remove leading and ending empty spaces from it
+            Sanitize.fragment(row).squish.split("-")[1].squish    
+        rescue Exception
+            return nil
+        end
     end
 
     # most recent / bottom in table UI
