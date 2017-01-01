@@ -9,7 +9,7 @@ Malaysia flood JSON API. Data from [JKR Malaysia](http://bencanaalam.jkr.gov.my/
 ### About
 
 1. Built with Ruby on Rails 5.0.1
-2. Deployed on Heroku on midnight of 01 Jan 2017 :tada: :fireworks: :sparkles:
+2. Deployed on Heroku on midnight of 01 Jan 2017
 3. Data updated every 1 hour
 
 ### Known Issues
