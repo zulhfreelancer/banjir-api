@@ -28,7 +28,7 @@ Malaysia flood JSON API. Data from [JKR Malaysia](http://bencanaalam.jkr.gov.my/
 
 ### Built With Banjir API
 
-- [MyBanjir Telegram Bot](https://telegram.me/MyBanjirBot)
+- [MyBanjir Telegram Bot](https://telegram.me/MyBanjirBot) by [Mohd Amin Yuddin Bin Yacob](https://github.com/mohdaminyuddin) - [GitHub](https://github.com/mohdaminyuddin/MyBanjirBot)
 
 ### Known Issues
 
